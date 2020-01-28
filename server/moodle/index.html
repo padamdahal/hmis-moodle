@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+		<title>HMIS Training</title>
+        <link rel="shortcut icon" href="_homepage_assets/img/nepal.ico" type="image/x-icon">
+        <link href="_homepage_assets/css/bootstrap.min.css" rel="stylesheet">
+		
+        <!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <style>
+    .jumbotron {min-height: 180px;padding-top: 10px;padding-bottom: 10px;}
+    .jumbotron h1 {font-size: 50px;color: #337ab7;}
+    .jumbotron h2 {font-size: 33px;}
+    </style>
+
+    <body>
+        <h1></h1>
+        <div class="container">
+            <div class="jumbotron">
+                <h1 class="text-center text-primary text-uppercase"><strong>Information saves lives!</strong></h1>
+                <h2 class="text-center"><strong>Welcome<strong></h2>
+            </div>
+        </div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 text-center">
+				  <div class="thumbnail">
+						<a id="dhis-link" href="#" target="_blank">
+							<img src="_homepage_assets/img/nepal.png" style="width:78.5%">
+							<div class="caption"><h2>DHIS2</h2></div>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-6 text-center">
+				  <div class="thumbnail">
+						<a id="moodle-link" href="#" target="_blank">
+							<img src="_homepage_assets/img/moodle.png" style="width:78.5%">
+							<div class="caption"><h2>Moodle</h2></div>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="row" style="border-top:1px solid #eee;border-bottom:1px solid #eee;padding:5px 0;margin-top:10px;">
+				<div class="col-md-6 text-left">
+					<img src="_homepage_assets/img/gov.png" alt="partner" style="width:80px" class="img-responsive">
+				</div>
+				<div class="col-md-6 text-right">
+					<p class="text-muted text-right" style="padding-top:25px">IHMIS</p>
+				</div>
+			</div>
+		</div>
+
+		<script src="_homepage_assets/js/jquery-3.2.1.min.js"></script>
+		<script src="_homepage_assets/js/bootstrap.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('#dhis-link').attr("href", window.location.origin+':8080/hmis');
+				$('#moodle-link').attr("href", window.location.origin+'/index.php');
+			});
+			
+		</script>
+  </body>
+</html>
